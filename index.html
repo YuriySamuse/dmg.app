@@ -7,6 +7,7 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>DMG – Direct marketing group</title>
+
 		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com"
@@ -17,7 +18,7 @@
 			crossorigin
 		/>
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap"
 			rel="stylesheet"
 		/>
 		<link
@@ -26,22 +27,60 @@
 		/>
 	</head>
 	<body>
-		<header>
-			<nav>
-				<ul>
-					<li><a href="">Про нас</a></li>
-					<li><a href="">Наша команда</a></li>
-					<li><a href="">Послуги</a></li>
+		<header class="header">
+			<nav class="header-nav">
+				<ul class="header-nav__list_left">
+					<li class="header__item">
+						<a
+							href="#about"
+							class="header-nav__link"
+							>Про нас</a
+						>
+					</li>
+					<li class="header__item">
+						<a
+							href="#our-team"
+							class="header-nav__link"
+							>Наша команда</a
+						>
+					</li>
+					<li class="header__item">
+						<a
+							href="#services"
+							class="header-nav__link"
+							>Послуги</a
+						>
+					</li>
 				</ul>
-				<a href="#"
+				<a
+					href="#"
+					class="header-logo"
 					><img
 						src="./img/logo.png"
 						alt="site logo"
 				/></a>
-				<ul>
-					<li><a href="">Наші партнери</a></li>
-					<li><a href="">Наші роботи</a></li>
-					<li><a href="">Контакти</a></li>
+				<ul class="header-nav__list_right">
+					<li class="header__item">
+						<a
+							href="#our-partner"
+							class="header-nav__link"
+							>Наші партнери</a
+						>
+					</li>
+					<li class="header__item">
+						<a
+							href="#our-works"
+							class="header-nav__link"
+							>Наші роботи</a
+						>
+					</li>
+					<li class="header__item">
+						<a
+							href="#contact"
+							class="header-nav__link"
+							>Контакти</a
+						>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -49,7 +88,10 @@
 			<section class="hero">
 				<h2 hidden>Головна сторінка dmggroup</h2>
 			</section>
-			<section class="about">
+			<section
+				id="about"
+				class="about"
+			>
 				<div class="left-info">
 					<h2>DMG <span>(Direct marketing group)</span></h2>
 					<p>
@@ -75,7 +117,10 @@
 					/>
 				</div>
 			</section>
-			<section class="teams">
+			<section
+				id="our-team"
+				class="teams"
+			>
 				<h2>Наша команда</h2>
 				<ul>
 					<li>
@@ -120,7 +165,10 @@
 					</li>
 				</ul>
 			</section>
-			<section class="service">
+			<section
+				id="services"
+				class="services"
+			>
 				<h2>Послуги</h2>
 				<button>IQ-mama club</button>
 				<ul>
@@ -189,7 +237,10 @@
 					</li>
 				</ul>
 			</section>
-			<section class="partners">
+			<section
+				id="our-partner"
+				class="partners"
+			>
 				<h2>Наші партнери</h2>
 				<ul>
 					<li>
@@ -234,7 +285,10 @@
 					</li>
 				</ul>
 			</section>
-			<section class="portfolio">
+			<section
+				id="our-works"
+				class="portfolio"
+			>
 				<h2>Наші роботи</h2>
 				<ul>
 					<li>
@@ -279,7 +333,10 @@
 					</li>
 				</ul>
 			</section>
-			<section class="contacts">
+			<section
+				id="contact"
+				class="contacts"
+			>
 				<h2>Контакти</h2>
 				<div class="address">
 					<address>
