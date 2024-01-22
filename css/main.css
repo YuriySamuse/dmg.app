@@ -17,10 +17,11 @@ ol {
 button,
 a {
   cursor: pointer;
+  color: currentColor;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
+address {
+  font-style: normal;
 }
 
 h1 {
@@ -34,4 +35,124 @@ img {
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: 1px solid red;
+}
+
+.section__title {
+  color: var(--title-text-color);
+}
+
+.header {
+  background-color: gray;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav__list_left {
+  display: flex;
+}
+
+.header-nav__list_right {
+  display: flex;
+}
+
+.about__wrap {
+  display: flex;
+}
+
+.teams__list {
+  display: flex;
+}
+
+.services__list {
+  display: flex;
+}
+
+.partners__list {
+  display: flex;
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio__item {
+  height: 350px;
+  width: 33.33%;
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__item_tel {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__map-form_wrap {
+  display: flex;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.soc__list {
+  display: flex;
+}
+
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --accent-color: #909090;
+  --title-text-color: #000000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */

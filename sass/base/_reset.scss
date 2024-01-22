@@ -16,9 +16,11 @@ ol {
 button,
 a {
     cursor: pointer;
+    color: currentColor;
 }
-body {
-    font-family: "Open Sans", sans-serif;
+
+address {
+    font-style: normal;
 }
 
 h1 {

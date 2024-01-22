@@ -1,0 +1,23 @@
+.contacts__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__item_tel {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__map-form_wrap {
+    display: flex;
+}
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}

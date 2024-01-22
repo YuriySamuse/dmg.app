@@ -1,0 +1,18 @@
+.header {
+    background-color: gray;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav__list_left {
+    display: flex;
+}
+
+.header-nav__list_right {
+    display: flex;
+}
