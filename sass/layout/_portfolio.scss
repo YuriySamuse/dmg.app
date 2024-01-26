@@ -1,10 +1,29 @@
 .portfolio__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .portfolio__item {
+    width: calc(100% / 3);
     height: 350px;
-    width: 33.33%;
+    padding: 40px;
+    &:nth-child(2) {
+        background-image: url("../../img/our-works-pic1.jpg");
+    }
+    &:nth-child(4) {
+        background-image: url("../../img/our-works-pic2.jpg");
+    }
+    & .btn {
+        margin-top: 10px;
+    }
+}
+
+.color_pink {
+    background-color: #ffdad1;
+}
+.color_orange {
+    background-color: #fff3c9;
+}
+.color_blue {
+    background-color: #d6ecff;
 }

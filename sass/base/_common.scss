@@ -22,6 +22,23 @@ body {
     outline: 1px solid red;
 }
 
+.section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .section__title {
     color: var(--title-text-color);
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.title {
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text {
+    margin-bottom: 10px;
 }

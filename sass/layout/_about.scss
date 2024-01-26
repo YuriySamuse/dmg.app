@@ -1,3 +1,37 @@
-.about__wrap {
+.about .container {
     display: flex;
+    gap: 40px;
+}
+.about__info_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    padding: 15px;
+}
+
+.about__text {
+    margin-bottom: 20px;
+}
+
+.about__btn_wrap {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about__info_right {
+    width: 67%;
+}
+
+.about__img::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    border: 7px solid rgba(146, 7, 7, 0.5);
+}
+.about__img {
+    width: 100%;
 }

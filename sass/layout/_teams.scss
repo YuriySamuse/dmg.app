@@ -1,3 +1,9 @@
 .teams__list {
     display: flex;
+    column-gap: 20px;
+}
+
+.teams__item {
+    text-align: center;
+    width: calc((100% - 40px) / 5);
 }

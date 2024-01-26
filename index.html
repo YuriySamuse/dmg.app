@@ -41,21 +41,21 @@
 						<li class="header__item">
 							<a
 								href="#about"
-								class="header-nav__link"
+								class="header-nav__link link"
 								>Про нас</a
 							>
 						</li>
 						<li class="header__item">
 							<a
 								href="#our-team"
-								class="header-nav__link"
+								class="header-nav__link link"
 								>Наша команда</a
 							>
 						</li>
 						<li class="header__item">
 							<a
 								href="#services"
-								class="header-nav__link"
+								class="header-nav__link link"
 								>Послуги</a
 							>
 						</li>
@@ -71,21 +71,21 @@
 						<li class="header__item">
 							<a
 								href="#our-partner"
-								class="header-nav__link"
+								class="header-nav__link link"
 								>Наші партнери</a
 							>
 						</li>
 						<li class="header__item">
 							<a
 								href="#our-works"
-								class="header-nav__link"
+								class="header-nav__link link"
 								>Наші роботи</a
 							>
 						</li>
 						<li class="header__item">
 							<a
 								href="#contact"
-								class="header-nav__link"
+								class="header-nav__link link"
 								>Контакти</a
 							>
 						</li>
@@ -94,48 +94,45 @@
 			</div>
 		</header>
 		<main>
-			<section class="hero">
-				<div class="container">
-					<h2 class="section__title visually-hidden">Головна сторінка dmggroup</h2>
-				</div>
+			<section class="hero section">
+				<h2 class="section__title visually-hidden">Головна сторінка dmggroup</h2>
 			</section>
 			<section
 				id="about"
-				class="about"
+				class="about section"
 			>
 				<div class="container">
-					<div class="about__wrap">
-						<div class="about__info_left">
-							<h2 class="section__title">DMG <span>(Direct marketing group)</span></h2>
-							<p class="about__text">
-								Ми – маркетингове агентство, що надає послуги з директ-маркетингу. Наша цільова аудиторія – вагітні та
-								мами з дітками до 3х років.
-							</p>
-							<p class="about__text">
-								Натхненником та генератором ідеї створення агентства була компанія дитячого харчування, яка хотіла
-								спілкуватися зі споживачем безпосередньо, і саме тому вона створила повний комплекс комунікації з жінкою
-								в один із найцікавіших періодів її життя.
-							</p>
+					<div class="about__info_left">
+						<h2 class="section__title">DMG <span>(Direct marketing group)</span></h2>
+						<p class="about__text">
+							Ми – маркетингове агентство, що надає послуги з директ-маркетингу. Наша цільова аудиторія – вагітні та
+							мами з дітками до 3х років.
+						</p>
+						<p class="about__text">
+							Натхненником та генератором ідеї створення агентства була компанія дитячого харчування, яка хотіла
+							спілкуватися зі споживачем безпосередньо, і саме тому вона створила повний комплекс комунікації з жінкою в
+							один із найцікавіших періодів її життя.
+						</p>
+						<div class="about__btn_wrap">
 							<a
 								href=""
-								class="about__btn, btn"
+								class="about__btn btn link"
 								>Детальніше</a
 							>
 						</div>
-						<div class="about__info_right">
-							<img
-								src="./img/pic-litel-info.jpg"
-								alt="litle info"
-								width="440"
-								class="about__img"
-							/>
-						</div>
+					</div>
+					<div class="about__info_right">
+						<img
+							src="./img/pic-litel-info.jpg"
+							alt="litle info"
+							class="about__img"
+						/>
 					</div>
 				</div>
 			</section>
 			<section
 				id="our-team"
-				class="teams"
+				class="teams section"
 			>
 				<div class="container">
 					<h2 class="section__title">Наша команда</h2>
@@ -155,7 +152,7 @@
 								alt="Тетерина Анастасія"
 								class="teams__img"
 							/>
-							<h3>Тетерина Анастасія</h3>
+							<h3 class="title">Тетерина Анастасія</h3>
 							<p>Регіональний менеджер, лікар – неонатолог (м. Харків)</p>
 						</li>
 						<li class="teams__item">
@@ -164,7 +161,7 @@
 								alt="Надія Моторна"
 								class="teams__img"
 							/>
-							<h3>Надія Моторна</h3>
+							<h3 class="title">Надія Моторна</h3>
 							<p>Регіональний менеджер, сімейний лікар (м. Одеса)</p>
 						</li>
 						<li class="teams__item">
@@ -173,7 +170,7 @@
 								alt="Оксана Митківська"
 								class="teams__img"
 							/>
-							<h3>Оксана Митківська</h3>
+							<h3 class="title">Оксана Митківська</h3>
 							<p>Керівник відділу продажу</p>
 						</li>
 						<li class="teams__item">
@@ -182,7 +179,7 @@
 								alt="Оля Куліш"
 								class="teams__img"
 							/>
-							<h3>Оля Куліш</h3>
+							<h3 class="title">Оля Куліш</h3>
 							<p></p>
 						</li>
 					</ul>
@@ -190,13 +187,20 @@
 			</section>
 			<section
 				id="services"
-				class="services"
+				class="services section"
 			>
 				<div class="container">
 					<h2 class="section__title">Послуги</h2>
-					<button>IQ-mama club</button>
 					<ul class="services__list list">
-						<li>
+						<li class="servises__item">
+							<button class="servises__logo">
+								<img
+									src="./img/services-midel-pic.png"
+									alt="iq_mama_club_pic"
+								/>
+							</button>
+						</li>
+						<li class="servises__item">
 							<a href="#">
 								<img
 									src="./img/07/services7.png"
@@ -205,7 +209,7 @@
 								<p>Medical promotion</p>
 							</a>
 						</li>
-						<li>
+						<li class="servises__item">
 							<a href="#">
 								<img
 									src="./img//07/services6.png"
@@ -214,7 +218,7 @@
 								<p>Call centers</p>
 							</a>
 						</li>
-						<li>
+						<li class="servises__item">
 							<a href="#">
 								<img
 									src="./img//07/services4.png"
@@ -223,7 +227,7 @@
 								<p>Event «IQ mama Meeting»</p>
 							</a>
 						</li>
-						<li>
+						<li class="servises__item">
 							<a href="#">
 								<img
 									src="./img/07/services3.png"
@@ -232,7 +236,7 @@
 								<p>Personal communication</p>
 							</a>
 						</li>
-						<li>
+						<li class="servises__item">
 							<a href="#">
 								<img
 									src="./img/07/services1.png"
@@ -241,7 +245,7 @@
 								<p>Pregnancy marketing</p>
 							</a>
 						</li>
-						<li>
+						<li class="servises__item">
 							<a href="#">
 								<img
 									src="./img//07/services2.png"
@@ -250,7 +254,7 @@
 								<p>New born marketing</p>
 							</a>
 						</li>
-						<li>
+						<li class="servises__item">
 							<a href="#">
 								<img
 									src="./img//07/services5.png"
@@ -264,7 +268,7 @@
 			</section>
 			<section
 				id="our-partner"
-				class="partners"
+				class="partners section"
 			>
 				<div class="container">
 					<h2 class="section__title">Наші партнери</h2>
@@ -314,57 +318,81 @@
 			</section>
 			<section
 				id="our-works"
-				class="portfolio"
+				class="portfolio section"
 			>
-				<div class="container">
-					<h2 class="portfolio__title">Наші роботи</h2>
-					<ul class="portfolio__list list">
-						<li class="portfolio__item">
-							<h3>ТМ Goo.N</h3>
-							<p>ТМ: підгузки Goo.N Рекламна компанія: New born marketing, реклама у посібнику «IQ mama Club»</p>
-							<p>ЦА – мами з новонародженими у провідних ЛПЗ в обласних центрах.</p>
-							<p>Цілі – підключення споживачів з перших днів використання підгузків</p>
-							<p>Рекламна компанія: New born marketing, реклама у посібнику «IQ mama Club»</p>
-							<button type="button">Детальніше</button>
-						</li>
-						<li class="portfolio__item">
-							<h3 hidden>Photo bg Baby</h3>
-						</li>
-						<li class="portfolio__item">
-							<h3>ТМ Синево</h3>
-							<p>ТМ: медична лабораторія «Синево»</p>
-							<p>ЦА– вагітні жінки в жіночих консультаціях України (міста мільйонники), мами з новонародженими.</p>
-							<p>Цілі – Заохочування споживачів використовувати лабораторію «Синево»</p>
-							<p>Рекламна компанія: New pregnancy marketing</p>
-							<button type="button">Детальніше</button>
-						</li>
-						<li class="portfolio__item">
-							<h3 hidden>Photo bg Mutter</h3>
-						</li>
-						<li class="portfolio__item">
-							<h3>Хьюмер</h3>
-							<p>ЦА: вагітні переважно після 25 тижнів, мами з новонародженими та до 1,5 років</p>
-							<p>Цілі: підключення споживачів з перших днів використання продукції бренду</p>
-							<p>Рекламна компанія: комплексна</p>
-							<p>Період проведення – 2017-2019</p>
-							<p>Географія: мільйонники + обл.центри</p>
-							<button type="button">Детальніше</button>
-						</li>
-						<li class="portfolio__item">
-							<h3>Baby Story</h3>
-							<p>ЦА: вагітні переважно після 25 тижнів, мами з новонародженими та до 2 років.</p>
-							<p>Цілі: Підвищення впізнаваності, заклик до здійснення покупки.</p>
-							<p>Рекламна компанія: комплексна</p>
-							<p>Період: 2012-2017</p>
-							<p>Географія: вся Україна.</p>
-							<button type="button">Детальніше</button>
-						</li>
-					</ul>
-				</div>
+				<!-- <div class="container"> -->
+				<h2 class="section__title">Наші роботи</h2>
+				<ul class="portfolio__list list">
+					<li class="portfolio__item color_blue">
+						<h3 class="title">ТМ Goo.N</h3>
+						<p class="text">
+							<b>ТМ:</b> підгузки Goo.N Рекламна компанія: New born marketing, реклама у посібнику «IQ mama Club»
+						</p>
+						<p class="text"><b>ЦА:</b> мами з новонародженими у провідних ЛПЗ в обласних центрах.</p>
+						<p class="text"><b>Цілі:</b> підключення споживачів з перших днів використання підгузків</p>
+						<p class="text"><b>Рекламна компанія:</b> New born marketing, реклама у посібнику «IQ mama Club»</p>
+						<button
+							type="button"
+							class="btn"
+						>
+							Детальніше
+						</button>
+					</li>
+					<li class="portfolio__item">
+						<h3 hidden>Photo bg Baby</h3>
+					</li>
+					<li class="portfolio__item color_blue">
+						<h3 class="title">ТМ Синево</h3>
+						<p class="text"><b>ТМ:</b> медична лабораторія «Синево»</p>
+						<p class="text">
+							<b>ЦА:</b>вагітні жінки в жіночих консультаціях України (міста мільйонники), мами з новонародженими.
+						</p>
+						<p class="text"><b>Цілі:</b> Заохочування споживачів використовувати лабораторію «Синево»</p>
+						<p class="text"><b>Рекламна компанія:</b> New pregnancy marketing</p>
+						<button
+							type="button"
+							class="btn"
+						>
+							Детальніше
+						</button>
+					</li>
+					<li class="portfolio__item">
+						<h3 hidden>Photo bg Mutter</h3>
+					</li>
+					<li class="portfolio__item color_orange">
+						<h3 class="title">Хьюмер</h3>
+						<p class="text"><b>ЦА:</b> вагітні переважно після 25 тижнів, мами з новонародженими та до 1,5 років</p>
+						<p class="text"><b>Цілі:</b> підключення споживачів з перших днів використання продукції бренду</p>
+						<p class="text"><b>Рекламна компанія:</b> комплексна</p>
+						<p class="text"><b>Період:</b> – 2017-2019</p>
+						<p class="text"><b>Географія:</b> мільйонники + обл.центри</p>
+						<button
+							type="button"
+							class="btn"
+						>
+							Детальніше
+						</button>
+					</li>
+					<li class="portfolio__item color_pink">
+						<h3 class="title">Baby Story</h3>
+						<p class="text"><b>ЦА:</b> вагітні переважно після 25 тижнів, мами з новонародженими та до 2 років.</p>
+						<p class="text"><b>Цілі:</b> Підвищення впізнаваності, заклик до здійснення покупки.</p>
+						<p class="text"><b>Рекламна компанія:</b> комплексна</p>
+						<p class="text"><b>Період:</b> 2012-2017</p>
+						<p class="text"><b>Географія:</b> вся Україна.</p>
+						<button
+							type="button"
+							class="btn"
+						>
+							Детальніше
+						</button>
+					</li>
+				</ul>
+				<!-- </div> -->
 			</section>
 			<section
 				id="contact"
-				class="contacts"
+				class="contacts section"
 			>
 				<div class="container">
 					<h2 class="section__title">Контакти</h2>

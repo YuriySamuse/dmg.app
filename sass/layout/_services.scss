@@ -1,3 +1,50 @@
 .services__list {
-    display: flex;
+    position: relative;
+    // display: flex;
+    // justify-content: center;
+    // gap: 40px;
+}
+.servises__item {
+    position: absolute;
+    transform: translate(50%, 0);
+    display: inline-block;
+    width: 120px;
+    background-color: gray;
+    &:nth-child(1) {
+        top: 0;
+        left: 50%;
+    }
+    &:nth-child(2) {
+        top: 14%;
+        left: 4%;
+    }
+    &:nth-child(3) {
+        top: 30%;
+        left: 19%;
+    }
+    &:nth-child(4) {
+        top: 46%;
+        left: 34%;
+    }
+    &:nth-child(5) {
+        top: 60%;
+        left: 50%;
+    }
+    &:nth-child(6) {
+        top: 46%;
+        left: 66%;
+    }
+    &:nth-child(7) {
+        top: 33%;
+        left: 81%;
+    }
+    &:nth-child(8) {
+        top: 14%;
+        left: 96%;
+    }
+}
+
+.servises__logo {
+    background: transparent;
+    // text-align: center;
 }
