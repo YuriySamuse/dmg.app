@@ -1,4 +1,10 @@
 .hero {
     height: 695px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: grey;
     background-image: url("../../img/header-index-pic.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }

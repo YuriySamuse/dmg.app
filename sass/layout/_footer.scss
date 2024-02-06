@@ -1,8 +1,22 @@
-.footer {
+.footer__nav {
+    min-height: 77px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.footer__nav-list {
+    display: flex;
 }
 
 .soc__list {
     display: flex;
+}
+
+.footer__copy {
+    height: 66px;
+    background-color: #b0cde6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

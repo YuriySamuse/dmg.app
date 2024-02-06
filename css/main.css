@@ -84,11 +84,18 @@ body {
   display: inline-block;
   border: 2px solid #909090;
   border-radius: 5px;
+  background-color: transparent;
 }
 
 .hero {
   height: 695px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: grey;
   background-image: url("../../img/header-index-pic.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .header {
@@ -176,48 +183,20 @@ body {
   width: calc((100% - 40px) / 5);
 }
 
-.services__list {
-  position: relative;
+.services {
+  width: 100%;
+  height: 750px;
+  background-image: url(../../img/services.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.servises__item {
-  position: absolute;
-  transform: translate(50%, 0);
-  display: inline-block;
-  width: 120px;
-  background-color: gray;
-}
-.servises__item:nth-child(1) {
-  top: 0;
-  left: 50%;
-}
-.servises__item:nth-child(2) {
-  top: 14%;
-  left: 4%;
-}
-.servises__item:nth-child(3) {
-  top: 30%;
-  left: 19%;
-}
-.servises__item:nth-child(4) {
-  top: 46%;
-  left: 34%;
-}
-.servises__item:nth-child(5) {
-  top: 60%;
-  left: 50%;
-}
-.servises__item:nth-child(6) {
-  top: 46%;
-  left: 66%;
-}
-.servises__item:nth-child(7) {
-  top: 33%;
-  left: 81%;
-}
-.servises__item:nth-child(8) {
-  top: 14%;
-  left: 96%;
+.services__list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 .servises__logo {
@@ -226,8 +205,34 @@ body {
 
 .partners__list {
   display: flex;
-  justify-content: center;
-  gap: 60px;
+  gap: 20px;
+}
+
+.partners__item {
+  width: 375px;
+  height: 280px;
+}
+
+.partners__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.partners__link > img {
+  height: auto;
+  max-width: 100%;
+}
+
+.partners__link > p {
+  font-size: 18px;
+  font-family: FregatBold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #337ab7;
 }
 
 .portfolio__list {
@@ -286,13 +291,27 @@ body {
   flex-direction: column;
 }
 
-.footer {
+.footer__nav {
+  min-height: 77px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.footer__nav-list {
+  display: flex;
 }
 
 .soc__list {
   display: flex;
+}
+
+.footer__copy {
+  height: 66px;
+  background-color: #b0cde6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 :root {
