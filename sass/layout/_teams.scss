@@ -6,4 +6,15 @@
 .teams__item {
     text-align: center;
     width: calc((100% - 40px) / 5);
+
+    & > h3 {
+        font-size: 18px;
+        margin-top: 23px;
+        margin-bottom: 7px;
+    }
+
+    & > p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
 }

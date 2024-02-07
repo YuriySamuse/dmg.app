@@ -3,18 +3,15 @@
 		{
 			"format": "expanded",
 			"extensionName": ".css",
-			"savePath": "/css"
+			"savePath": "/sass/css"
 		},
 		{
 			"format": "compressed",
 			"extensionName": ".min.css",
-			"savePath": "/css"
+			"savePath": "/sass/css"
 		}
 	],
-	"liveSassCompile.settings.excludeList": [
-		"**/node_modules/**",
-		".vscode/**"
-	],
+	"liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
 
 	"liveSassCompile.settings.generateMap": true,
 	"liveServer.settings.port": 1235,
