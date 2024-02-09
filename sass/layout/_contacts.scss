@@ -1,20 +1,40 @@
 .contacts__list {
     display: flex;
-    justify-content: space-between;
+    column-gap: 30px;
+    margin-bottom: 50px;
 }
 
-.contact__item_tel {
+.contacts__item {
+    width: calc((100% / 3) - 15px);
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.contacts__text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding: 18px 15px 0;
+    word-wrap: break-word;
+}
+
+.contacts__link {
+    margin: 20px auto;
 }
 
 .contacts__map-form_wrap {
     display: flex;
+    justify-content: space-between;
+}
+
+.map {
+    width: calc(50% - 15px);
 }
 
 .contacts-form {
     display: flex;
     flex-direction: column;
+    width: calc(50% - 15px);
 }
 
 .form {

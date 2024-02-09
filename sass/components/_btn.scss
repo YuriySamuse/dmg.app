@@ -1,9 +1,14 @@
 .btn {
     min-width: 200px;
-    padding: 10px 60px;
-    color: #212121;
+    padding: 6px 12px;
+    color: var(--title-text-color);
     display: inline-block;
-    border: 2px solid #909090;
+    border: 3px solid var(--accent-color);
     border-radius: 5px;
     background-color: transparent;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
 }
