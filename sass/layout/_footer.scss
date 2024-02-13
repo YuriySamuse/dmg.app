@@ -10,6 +10,10 @@
     column-gap: 20px;
 }
 
+.footer__nav-item:hover {
+    color: var(--accent-color);
+}
+
 .soc__list {
     display: flex;
     justify-content: center;

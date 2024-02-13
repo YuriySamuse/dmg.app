@@ -91,9 +91,12 @@ body {
   line-height: 1.42857143;
   text-align: center;
 }
+.btn:hover, .btn:focus {
+  color: var(--accent-color);
+}
 
 .hero {
-  height: 695px;
+  height: 900px;
   margin: 0 auto;
   padding: 20px;
   background-color: grey;
@@ -112,7 +115,7 @@ body {
 
 .header-nav {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .header-nav__list_left {
@@ -124,6 +127,9 @@ body {
   font-weight: 600;
   line-height: 20px;
   text-transform: uppercase;
+}
+.header-nav__link:hover {
+  color: var(--accent-color);
 }
 
 .header__item:not(:last-child) {
@@ -238,13 +244,63 @@ body {
 
 .services__list {
   position: relative;
+  height: 600px;
+}
+
+.servises__item {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: blanchedalmond;
+}
+.servises__item:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 300px;
+  height: 300px;
+}
+.servises__item:nth-child(2) {
+  top: 14%;
+  left: 0;
+}
+.servises__item:nth-child(3) {
+  top: 40%;
+  left: 13%;
+}
+.servises__item:nth-child(4) {
+  top: 55%;
+  left: 30%;
+}
+.servises__item:nth-child(5) {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.servises__item:nth-child(6) {
+  top: 55%;
+  right: 30%;
+}
+.servises__item:nth-child(7) {
+  top: 40%;
+  right: 13%;
+}
+.servises__item:nth-child(8) {
+  top: 14%;
+  right: 0;
+}
+.servises__item a {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .servises__logo {
   background: transparent;
+  display: flex;
+  align-items: center;
+  border: none;
 }
 
 .partners__list {
@@ -330,6 +386,10 @@ body {
   align-items: center;
 }
 
+.contact__icon {
+  fill: var(--accent-color);
+}
+
 .contacts__text {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
@@ -371,6 +431,10 @@ body {
 .footer__nav-list {
   display: flex;
   column-gap: 20px;
+}
+
+.footer__nav-item:hover {
+  color: var(--accent-color);
 }
 
 .soc__list {

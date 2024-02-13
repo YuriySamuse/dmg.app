@@ -9,51 +9,67 @@
 
 .services__list {
     position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+    height: 600px;
+    // display: flex;
+    // justify-content: center;
+    // gap: 40px;
+    // outline: 1px solid teal;
 }
-// .servises__item {
-//     position: absolute;
-//     transform: translate(50%, 0);
-//     display: inline-block;
-//     width: 120px;
-//     background-color: gray;
-//     &:nth-child(1) {
-//         top: 0;
-//         left: 50%;
-//     }
-//     &:nth-child(2) {
-//         top: 14%;
-//         left: 4%;
-//     }
-//     &:nth-child(3) {
-//         top: 30%;
-//         left: 19%;
-//     }
-//     &:nth-child(4) {
-//         top: 46%;
-//         left: 34%;
-//     }
-//     &:nth-child(5) {
-//         top: 60%;
-//         left: 50%;
-//     }
-//     &:nth-child(6) {
-//         top: 46%;
-//         left: 66%;
-//     }
-//     &:nth-child(7) {
-//         top: 33%;
-//         left: 81%;
-//     }
-//     &:nth-child(8) {
-//         top: 14%;
-//         left: 96%;
-//     }
-// }
+.servises__item {
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+    background-color: blanchedalmond;
+
+    &:nth-child(1) {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 300px;
+        height: 300px;
+    }
+    &:nth-child(2) {
+        top: 14%;
+        left: 0;
+    }
+    &:nth-child(3) {
+        top: 40%;
+        left: 13%;
+    }
+    &:nth-child(4) {
+        top: 55%;
+        left: 30%;
+    }
+    &:nth-child(5) {
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    &:nth-child(6) {
+        top: 55%;
+        right: 30%;
+    }
+    &:nth-child(7) {
+        top: 40%;
+        right: 13%;
+    }
+    &:nth-child(8) {
+        top: 14%;
+        right: 0;
+    }
+    & a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // background-color: aqua;
+        text-align: center;
+    }
+}
 
 .servises__logo {
     background: transparent;
-    // text-align: center;
+    display: flex;
+    align-items: center;
+    border: none;
 }
