@@ -20,7 +20,7 @@
 
     width: 120px;
     height: 120px;
-    background-color: blanchedalmond;
+    transition: opacity 300ms linear;
 
     &:nth-child(1) {
         top: 0;
@@ -64,6 +64,9 @@
         align-items: center;
         // background-color: aqua;
         text-align: center;
+    }
+    &:hover {
+        opacity: 0.6;
     }
 }
 

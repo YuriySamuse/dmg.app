@@ -28,6 +28,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition:
+        color 300ms linear,
+        background-color 300ms linear;
 
     & > .soc-icon {
         fill: currentColor;

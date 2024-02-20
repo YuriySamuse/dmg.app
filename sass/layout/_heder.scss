@@ -18,7 +18,9 @@
     font-weight: 600;
     line-height: 20px;
     text-transform: uppercase;
-    &:hover {
+    transition: color 300ms linear;
+    &:hover,
+    &:focus {
         color: var(--accent-color);
     }
 }
