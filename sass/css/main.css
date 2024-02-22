@@ -58,9 +58,13 @@ body {
 }
 
 .title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .text {
@@ -382,48 +386,105 @@ body {
   column-gap: 30px;
   margin-bottom: 50px;
 }
-
 .contacts__item {
   width: calc(33.3333333333% - 15px);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.contact__icon {
+.contacts__icon {
   fill: var(--accent-color);
 }
-
 .contacts__text {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   padding: 18px 15px 0;
   word-wrap: break-word;
 }
-
 .contacts__link {
   margin: 20px auto;
 }
-
-.contacts__map-form_wrap {
+.contacts__map_wrap {
   display: flex;
-  justify-content: space-between;
 }
-
-.map {
+.contacts__map {
   width: calc(50% - 15px);
 }
-
-.contacts-form {
-  display: flex;
-  flex-direction: column;
-  width: calc(30% - 15px);
-  margin-right: 50px;
+.contacts__form_wrap {
+  width: calc(50% - 15px);
+  padding: 0 110px;
+  padding-bottom: 40px;
+  margin: 0 auto;
 }
-
-.form {
+.contacts__title {
+  margin-bottom: 40px;
+}
+.contacts__form {
   display: flex;
   flex-direction: column;
+}
+.contacts__field {
+  margin-bottom: 20px;
+}
+.contacts__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+  display: block;
+  cursor: pointer;
+}
+.contacts__item_form {
+  width: 100%;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  color: var(--title-text-color);
+  font-weight: 600;
+  transition: border-color 300ms ease;
+}
+.contacts__item_form:focus, .contacts__item_form:hover {
+  border-color: var(--border-title-color);
+  outline: none;
+}
+.contacts__item_form::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--accent-color);
+}
+.contacts__input_wrap {
+  position: relative;
+}
+.contacts__input {
+  height: 40px;
+  padding-left: 40px;
+}
+.contacts__input:focus + .contacts__input_icon, .contacts__input:hover + .contacts__input_icon {
+  fill: var(--border-title-color);
+}
+.contacts__input_icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 300ms ease;
+  cursor: pointer;
+}
+.contacts__textarea {
+  resize: none;
+  height: 100px;
+  padding-left: 20px;
+}
+.contacts__btn {
+  background-color: var(--border-title-color);
+  transition: background-color 300ms linear, color 300ms ease;
+}
+.contacts__btn:hover, .contacts__btn:focus {
+  background-color: var(--accent-color);
+  color: var(--bg-orange-color);
 }
 
 .footer__nav {
