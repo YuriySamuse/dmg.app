@@ -3,7 +3,7 @@
         max-width: 440px;
         display: flex;
         flex-wrap: wrap;
-        text-align: center;
+        // text-align: center;
         margin-bottom: 28px;
 
         @include tablet {
@@ -20,6 +20,7 @@
         width: 100%;
         margin-bottom: 30px;
         display: flex;
+        margin-left: 80%;
         // flex-direction: column;
     }
 
@@ -34,14 +35,13 @@
     }
 
     &__item-content {
-        position: absolute;
-        left: 0;
-        top: 0;
         width: 100%;
-        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__text {
+        font-weight: 600;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 17px;
         padding: 18px 15px 0;
@@ -50,6 +50,7 @@
     }
 
     &__link {
-        margin: 5px auto;
+        width: 100%;
+        font-weight: 600;
     }
 }

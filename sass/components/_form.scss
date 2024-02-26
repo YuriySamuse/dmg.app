@@ -1,16 +1,16 @@
+.info__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    @include tablet {
+        flex-direction: row;
+    }
+}
+
 .info {
     padding-top: 50px;
     padding-bottom: 50px;
-
-    &__wrap {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        align-items: center;
-        @include tablet {
-            flex-direction: row;
-        }
-    }
 
     &__map {
         width: 100%;
