@@ -1,24 +1,46 @@
-.portfolio__list {
-    display: flex;
-    flex-wrap: wrap;
-}
+.portfolio {
+    padding-top: 55px;
+    padding-bottom: 55px;
 
-.portfolio__item {
-    width: calc(100% / 3);
-    height: 350px;
-    padding: 40px;
-    &:nth-child(2) {
-        background-image: url("../../img/our-works-pic1.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        height: 700px;
     }
-    &:nth-child(4) {
-        background-image: url("../../img/our-works-pic2.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+
+    &__item {
+        max-width: 100%;
+        &:not(:first-child) {
+            display: none;
+        }
+        @include tablet {
+            &:nth-child(2) {
+                display: block;
+            }
+            max-width: calc(100% / 2);
+        }
+        @include desktop {
+            &:nth-child(3) {
+                display: block;
+            }
+            max-width: calc(100% / 3);
+        }
     }
+
+    &__image {
+        min-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        // object-position: 50% 50%;
+    }
+
+    &__item-content {
+        padding: 30px;
+        width: 100%;
+        height: 50%;
+        outline: 1px solid orange;
+    }
+
     & .btn {
         margin-top: 10px;
     }

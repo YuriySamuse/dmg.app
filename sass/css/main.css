@@ -165,10 +165,15 @@ body {
   margin: 0 auto;
   padding: 20px;
   background-color: grey;
-  background-image: linear-gradient(rgba(218, 234, 247, 0.2), rgba(25, 28, 38, 0.3)), url("../../img/header-index-pic.jpg");
+  background-image: linear-gradient(rgba(218, 234, 247, 0.2), rgba(25, 28, 38, 0.3)), url("../../img/hero-mob.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(218, 234, 247, 0.2), rgba(25, 28, 38, 0.3)), url("../../img/hero.jpg");
+  }
 }
 
 .header {
@@ -314,12 +319,22 @@ body {
 
 .teams__list {
   display: flex;
-  column-gap: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-
 .teams__item {
   text-align: center;
-  width: calc((100% - 40px) / 5);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .teams__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teams__item {
+    width: calc((100% - 120px) / 5);
+  }
 }
 .teams__item > h3 {
   font-size: 18px;
@@ -329,6 +344,9 @@ body {
 .teams__item > p {
   font-size: 14px;
   margin-bottom: 10px;
+}
+.teams__img {
+  width: 100%;
 }
 
 .services {
@@ -465,29 +483,49 @@ body {
   color: #337ab7;
 }
 
+.portfolio {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
+  height: 700px;
 }
-
 .portfolio__item {
-  width: 33.3333333333%;
-  height: 350px;
-  padding: 40px;
+  max-width: 100%;
 }
-.portfolio__item:nth-child(2) {
-  background-image: url("../../img/our-works-pic1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.portfolio__item:not(:first-child) {
+  display: none;
 }
-.portfolio__item:nth-child(4) {
-  background-image: url("../../img/our-works-pic2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    max-width: 50%;
+  }
+  .portfolio__item:nth-child(2) {
+    display: block;
+  }
 }
-.portfolio__item .btn {
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    max-width: 33.3333333333%;
+  }
+  .portfolio__item:nth-child(3) {
+    display: block;
+  }
+}
+.portfolio__image {
+  min-width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.portfolio__item-content {
+  padding: 30px;
+  width: 100%;
+  height: 50%;
+  outline: 1px solid orange;
+}
+.portfolio .btn {
   margin-top: 10px;
 }
 
