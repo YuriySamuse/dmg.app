@@ -344,7 +344,6 @@
 				id="our-works"
 				class="portfolio section"
 			>
-				<!-- <div class="container"> -->
 				<h2 class="section__title">Наші роботи</h2>
 				<ul class="portfolio__list list">
 					<li class="portfolio__item ">
@@ -373,7 +372,6 @@
 							height="350"
 						/>
 					</li>
-
 					<li class="portfolio__item">
 						<img
 							src="./img/our-works-pic2.jpg"
@@ -434,36 +432,24 @@
 							>
 								Детальніше
 							</button>
-					</li>
-					<!-- <li class="portfolio__item color_pink">
-						<img
-							src="./img/our-works-pic3.jpg"
-							alt="Photo bg Baby"
-							class="portfolio__image"
-							height="350"
-						/>
-						
-						</div>
-					</li> -->
-				</ul>
-				<!-- </div> -->
+					</li>					
+				</ul>				
 			</section>
-			<!-- <section
+			<section
 				id="contact"
-				class="contacts section"
+				class="info section"
 			>
 				<div class="container">
-					<h2 class="section__title">Контакти</h2>
-					<div class="address__wrap">
-						<address>
+					<h2 class="section__title">Контакти</h2>					
+						<address class="contacts">
 							<ul class="contacts__list list">
-								<li class="contacts__item">
+								<li class="contacts__item">									
 									<svg
 										class="contacts__icon"
 										height="45px"
 									>
 										<use href="./img/soc/icons.svg#icon-phone"></use>
-									</svg>
+									</svg>																		
 									<p class="contacts__text">Керівник відділу Оксана Митківска</p>
 									<a
 										href="tel:+380506889038"
@@ -475,6 +461,7 @@
 										class="contacts__link"
 										>+380672401154</a
 									>
+									
 								</li>
 								<li class="contacts__item">
 									<svg
@@ -505,10 +492,9 @@
 									>
 								</li>
 							</ul>
-						</address>
-					</div>
-					<div class="contacts__map_wrap">
-						<section class="contacts__map">
+						</address>					
+					<div class="info__wrap">
+						<section class="info__map">
 							<h3 hidden>Карта проїзду</h3>
 							<iframe
 								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5079.293760991562!2d30.513321!3d50.4663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf7c722ab97b%3A0xde7c0f09590f4957!2sRegus%20-%20Kyiv%2C%20Podil%20Heritage!5e0!3m2!1suk!2sus!4v1705770635922!5m2!1suk!2sus"
@@ -521,25 +507,25 @@
 							>
 							</iframe>
 						</section>
-						<section class="contacts__form_wrap">
-							<h3 class="title contacts__title">Ми зв'яжемось з Вами</h3>
-							<form class="contacts__form">
-								<div class="contacts__field">
+						<section class="form__wrap">
+							<h3 class="title form__title">Ми зв'яжемось з Вами</h3>
+							<form class="form">
+								<div class="form__field">
 									<label
 										for="user-name"
-										class="contacts__label"
+										class="form__label"
 										>Введіть ім'я</label
 									>
-									<div class="contacts__input_wrap">
+									<div class="form__input_wrap">
 										<input
 											type="text"
-											class="contacts__input contacts__item_form"
+											class="form__input form__item_form"
 											name="user-name"
 											placeholder="ім'я"
 											id="user-name"
 										/>
 										<svg
-											class="contacts__input_icon"
+											class="form__input_icon"
 											width="18"
 											height="18"
 										>
@@ -547,22 +533,22 @@
 										</svg>
 									</div>
 								</div>
-								<div class="contacts__field">
+								<div class="form__field">
 									<label
 										for="user-email"
-										class="contacts__label"
+										class="form__label"
 										>Введіть емейл</label
 									>
-									<div class="contacts__input_wrap">
+									<div class="form__input_wrap">
 										<input
 											type="email"
-											class="contacts__input contacts__item_form"
+											class="form__input form__item_form"
 											name="user-email"
 											placeholder="e-mail"
 											id="user-email"
 										/>
 										<svg
-											class="contacts__input_icon"
+											class="form__input_icon"
 											width="18"
 											height="18"
 										>
@@ -570,22 +556,22 @@
 										</svg>
 									</div>
 								</div>
-								<div class="contacts__field">
+								<div class="form__field">
 									<label
 										for="user-tel"
-										class="contacts__label"
+										class="form__label"
 										>Введіть телефон</label
 									>
-									<div class="contacts__input_wrap">
+									<div class="form__input_wrap">
 										<input
 											type="tel"
-											class="contacts__input contacts__item_form"
+											class="form__input form__item_form"
 											name="user-tel"
 											placeholder="телефон"
 											id="user-tel"
 										/>
 										<svg
-											class="contacts__input_icon"
+											class="form__input_icon"
 											width="18"
 											height="18"
 										>
@@ -593,22 +579,22 @@
 										</svg>
 									</div>
 								</div>
-								<div class="contacts__field">
+								<div class="form__field">
 									<label
 										for="user-message"
-										class="contacts__label"
+										class="form__label"
 										>Введіть повідомлення</label
 									>
 									<textarea
 										name="user-message"
-										class="contacts__textarea contacts__item_form"
+										class="form__textarea form__item_form"
 										placeholder="повідомлення"
 										id="user-message"
 									></textarea>
 								</div>
 								<button
 									type="submit"
-									class="contacts__btn btn"
+									class="form__btn btn"
 								>
 									Надіслати
 								</button>
@@ -616,7 +602,7 @@
 						</section>
 					</div>
 				</div>
-			</section> -->
+			</section>
 		</main>
 		<!-- <footer>
 			<div class="container">
