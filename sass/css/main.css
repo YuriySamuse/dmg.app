@@ -365,6 +365,7 @@ body {
   display: block;
   margin-left: auto;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .mob-menu {
@@ -372,6 +373,7 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 2;
+  top: 0;
   background-color: var(--bg-section-color);
 }
 .mob-menu__nav {
