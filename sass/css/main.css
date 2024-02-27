@@ -632,8 +632,8 @@ body {
   }
 }
 .portfolio__image {
-  min-width: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  object-fit: fill;
   overflow: hidden;
 }
 .portfolio__item-content {
@@ -677,7 +677,7 @@ body {
   width: 100%;
   margin-bottom: 30px;
   display: flex;
-  margin-left: 80%;
+  margin-left: 80px;
 }
 .contacts__item-img {
   position: relative;
@@ -703,6 +703,7 @@ body {
 .contacts__link {
   width: 100%;
   font-weight: 600;
+  margin-top: 20px;
 }
 
 .footer__nav {
