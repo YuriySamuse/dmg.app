@@ -666,6 +666,7 @@ body {
 @media screen and (min-width: 768px) {
   .contacts__list {
     max-width: 738px;
+    flex-wrap: nowrap;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -680,6 +681,13 @@ body {
   display: flex;
   padding-left: 80px;
 }
+@media screen and (min-width: 768px) {
+  .contacts__item {
+    width: 33.3333333333%;
+    padding-left: 0;
+    padding-top: 80px;
+  }
+}
 .contacts__icon {
   position: absolute;
   fill: var(--accent-color);
@@ -688,6 +696,13 @@ body {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .contacts__icon {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .contacts__item-content {
   width: 100%;

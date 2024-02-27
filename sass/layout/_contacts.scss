@@ -3,11 +3,11 @@
         max-width: 440px;
         display: flex;
         flex-wrap: wrap;
-        // text-align: center;
         margin-bottom: 28px;
 
         @include tablet {
             max-width: 738px;
+            flex-wrap: nowrap;
         }
 
         @include desktop {
@@ -17,12 +17,16 @@
 
     &__item {
         position: relative;
-        // width: calc((100% / 3) - 15px);
+
         width: 100%;
         margin-bottom: 50px;
         display: flex;
         padding-left: 80px;
-        // flex-direction: column;
+        @include tablet {
+            width: calc(100% / 3);
+            padding-left: 0;
+            padding-top: 80px;
+        }
     }
 
     &__icon {
@@ -33,6 +37,12 @@
         left: 0;
         top: 50%;
         transform: translateY(-50%);
+
+        @include tablet {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 
     &__item-content {
