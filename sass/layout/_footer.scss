@@ -7,12 +7,29 @@
     }
 
     &__nav-list {
-        display: flex;
-        column-gap: 20px;
+        display: none;
+
+        @include tablet {
+            display: flex;
+            gap: 10px;
+        }
+        @include desktop {
+            display: flex;
+            gap: 20px;
+        }
     }
 
-    &__nav-item:hover {
-        color: var(--accent-color);
+    &__nav-item {
+        &:last-child {
+            display: none;
+            @include desktop {
+                display: block;
+            }
+        }
+
+        &:hover {
+            color: var(--accent-color);
+        }
     }
 
     &__copy {

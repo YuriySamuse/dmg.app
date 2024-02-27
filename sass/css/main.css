@@ -2,11 +2,13 @@
   --primary-text-color: rgba(0, 0, 0, 0.8);
   --accent-color: #909090;
   --title-text-color: #000000;
+  --bg-section-color: rgb(247, 247, 247);
   --bg-main-color: #b0cde6;
   --bg-pink-color: #ffdad1;
   --bg-orange-color: #fff3c9;
   --bg-blue-color: #d6ecff;
   --border-title-color: #0c81f6;
+  --mob-menu-color: #222e70;
 }
 
 .visually-hidden {
@@ -19,6 +21,16 @@
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
   overflow: hidden;
 }
 
@@ -305,8 +317,16 @@ body {
   align-items: flex-start;
 }
 
-.header-nav__list_left {
-  display: flex;
+.header-nav__list {
+  display: none;
+}
+.header-nav__list right {
+  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .header-nav__list {
+    display: flex;
+  }
 }
 
 .header-nav__link {
@@ -325,12 +345,50 @@ body {
 }
 
 .header-logo {
-  margin-left: auto;
+  margin: 0 auto;
 }
 
-.header-nav__list_right {
+.menu-open {
   margin-left: auto;
-  display: flex;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  fill: var(--mob-menu-color);
+}
+@media screen and (min-width: 1200px) {
+  .menu-open {
+    display: none;
+  }
+}
+
+.menu-close {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.mob-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: var(--bg-section-color);
+}
+.mob-menu__nav {
+  margin-bottom: 64px;
+}
+.mob-menu__item {
+  margin: auto;
+}
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mob-menu__link {
+  font-weight: 600;
+  font-style: 18px;
+  line-height: 1.3888888889;
+  letter-spacing: 0.1em;
+  color: var(--mob-menu-color);
 }
 
 .about {
@@ -434,6 +492,9 @@ body {
   width: 100%;
 }
 
+.teams {
+  background-color: var(--bg-section-color);
+}
 .teams__list {
   display: flex;
   flex-wrap: wrap;
@@ -734,8 +795,27 @@ body {
   align-items: center;
 }
 .footer__nav-list {
-  display: flex;
-  column-gap: 20px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer__nav-list {
+    display: flex;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__nav-list {
+    display: flex;
+    gap: 20px;
+  }
+}
+.footer__nav-item:last-child {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .footer__nav-item:last-child {
+    display: block;
+  }
 }
 .footer__nav-item:hover {
   color: var(--accent-color);
