@@ -531,16 +531,26 @@ body {
 
 .services {
   width: 100%;
-  height: 750px;
+  height: 1100px;
   background-image: linear-gradient(rgba(218, 234, 247, 0.4), rgba(218, 234, 247, 0.4)), url(../../img/services.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .services {
+    height: 750px;
+  }
+}
 
 .services__list {
   position: relative;
-  height: 600px;
+  height: 900px;
+}
+@media screen and (min-width: 768px) {
+  .services__list {
+    height: 600px;
+  }
 }
 
 .servises__item {
@@ -550,23 +560,23 @@ body {
   transition: opacity 300ms linear;
 }
 .servises__item:nth-child(1) {
-  top: 0;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, 0);
   width: 300px;
   height: 300px;
 }
 .servises__item:nth-child(2) {
-  top: 14%;
+  top: 0;
   left: 0;
 }
 .servises__item:nth-child(3) {
-  top: 40%;
-  left: 13%;
+  top: 50%;
+  left: 0;
 }
 .servises__item:nth-child(4) {
-  top: 55%;
-  left: 30%;
+  top: 67%;
+  left: 0;
 }
 .servises__item:nth-child(5) {
   bottom: 0;
@@ -574,16 +584,54 @@ body {
   transform: translate(-50%, 0);
 }
 .servises__item:nth-child(6) {
-  top: 55%;
-  right: 30%;
+  top: 67%;
+  right: 0%;
 }
 .servises__item:nth-child(7) {
-  top: 40%;
-  right: 13%;
+  top: 50%;
+  right: 0;
 }
 .servises__item:nth-child(8) {
-  top: 14%;
+  top: 0;
   right: 0;
+}
+@media screen and (min-width: 768px) {
+  .servises__item:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 300px;
+    height: 300px;
+  }
+  .servises__item:nth-child(2) {
+    top: 14%;
+    left: 0;
+  }
+  .servises__item:nth-child(3) {
+    top: 40%;
+    left: 13%;
+  }
+  .servises__item:nth-child(4) {
+    top: 55%;
+    left: 30%;
+  }
+  .servises__item:nth-child(5) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .servises__item:nth-child(6) {
+    top: 55%;
+    right: 30%;
+  }
+  .servises__item:nth-child(7) {
+    top: 40%;
+    right: 13%;
+  }
+  .servises__item:nth-child(8) {
+    top: 14%;
+    right: 0;
+  }
 }
 .servises__item a {
   display: flex;
