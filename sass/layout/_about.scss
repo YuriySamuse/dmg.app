@@ -71,15 +71,18 @@
 
     &__info_right {
         display: none;
+
         @include tablet {
             display: block;
         }
         position: relative;
+
         width: 100%;
         padding: 15px;
         &::before {
             content: "";
             position: absolute;
+
             left: 20px;
             top: 20px;
             width: calc(100% - 40px);
